@@ -17,6 +17,8 @@
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/aosp_taimen.mk \
     $(LOCAL_DIR)/aosp_taimen_hwasan.mk \
+    $(LOCAL_DIR)/calyx_taimen.mk
 
 COMMON_LUNCH_CHOICES := \
-    aosp_taimen-userdebug
+    aosp_taimen-userdebug \
+    calyx_taimen-userdebug
