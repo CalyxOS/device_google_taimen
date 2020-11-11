@@ -1,6 +1,8 @@
 # Inherit some common stuff.
 $(call inherit-product, vendor/calyx/config/common.mk)
 
+$(call inherit-product, device/google/wahoo/device-calyx.mk)
+
 # Inherit device configuration
 $(call inherit-product, device/google/taimen/aosp_taimen.mk)
 
