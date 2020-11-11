@@ -2,6 +2,7 @@
 $(call inherit-product, vendor/calyx/config/common.mk)
 
 # Inherit device configuration
+$(call inherit-product, device/google/wahoo/device-calyx.mk)
 $(call inherit-product, device/google/taimen/aosp_taimen.mk)
 
 ## Device identifier. This must come after all inclusions
