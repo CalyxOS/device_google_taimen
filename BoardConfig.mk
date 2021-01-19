@@ -28,6 +28,16 @@ BOARD_EXT4_SHARE_DUP_BLOCKS := true
 # sepolicy
 BOARD_VENDOR_SEPOLICY_DIRS += device/google/taimen/sepolicy
 
+# Kernel modules
+ifeq ($(INLINE_KERNEL_BUILDING),false)
+BOARD_VENDOR_KERNEL_MODULES += \
+    device/google/wahoo-kernel/touch_core_base.ko \
+    device/google/wahoo-kernel/ftm4.ko \
+    device/google/wahoo-kernel/sw49408.ko \
+    device/google/wahoo-kernel/lge_battery.ko \
+    device/google/wahoo-kernel/wlan.ko
+endif
+
 -include vendor/google_devices/taimen/proprietary/BoardConfigVendor.mk
 
 # Testing related defines
