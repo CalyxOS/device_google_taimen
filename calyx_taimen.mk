@@ -9,3 +9,5 @@ $(call inherit-product, device/google/taimen/aosp_taimen.mk)
 PRODUCT_NAME := calyx_taimen
 PRODUCT_MODEL := Pixel 2 XL
 PRODUCT_RESTRICT_VENDOR_FILES := false
+
+PRODUCT_SOONG_NAMESPACES += vendor/google_devices/taimen
